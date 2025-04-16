@@ -60,10 +60,10 @@
 **第三章：Solidity 开发到部署**  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467534) |  [task3](./task/task3.md)
 
 
-**第四章：Web3 前端 101**
+**第四章：Web3 前端 101**  |   [task4](./task/task4.md)
 
-1. 基础知识和常用库/工具  
-2. 开发 DApp 前端项目  
+1. 基础知识和常用库/工具   |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467453)  
+2. 开发 DApp 前端项目  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467503)  
 
 
 **第五章：Monad 101**
@@ -98,6 +98,7 @@
 2. [Monad vs Rollups ](https://github.com/monad-cn/docs/blob/main/articles/102_MonadvsRollups.md)  
 3. [Monad工作原理](https://github.com/monad-cn/docs/blob/main/articles/110_Monad%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.md)  
 4. [Monad 的安全优势](https://github.com/monad-cn/docs/blob/main/articles/107_Monad%E7%9A%84%E5%AE%89%E5%85%A8%E4%BC%98%E5%8A%BF.md)  
+5. [用 Scaffold-Eth-Monad 开发 Dapp](https://docs.monad.xyz/guides/scaffold-eth-monad)  
 
 #### Dapp 
 
