@@ -45,6 +45,7 @@
 完成报名后添加小助手微信 **xxxofu** 加入学习交流群。课程涵盖 Web3 入门、Solidity开发到实战，Web3 前端开发以及 Monad 上的 DApp 开发，适合各个阶段的 Web3 开发者，0基础也可以参与学习，可以参考[学习资源](#学习资源)进行拓展学习，有其他问题请联系小助手或在交流群沟通。
 
 1. 领水：https://faucet.openbuild.xyz/monad  
+2. 了解 Monad：https://gmonad.cc/blog/  
 
 ---
 
