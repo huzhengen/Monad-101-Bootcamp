@@ -61,7 +61,7 @@
 **第三章：Solidity 开发到部署**  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467534) |  [task3](./task/task3.md)
 
 
-**第四章：Web3 前端 101**  |   [task4](./task/task4.md)
+**第四章：Web3 前端 101**  |   [task4](./task/task4.md)  |  [教程](https://gmonad.cc/guide/pixel_grid_guide.html)
 
 1. 基础知识和常用库/工具   |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467453)  
 2. 开发 DApp 前端项目  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467503)  
