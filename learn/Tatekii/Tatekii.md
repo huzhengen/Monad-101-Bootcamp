@@ -1,0 +1,5 @@
+- 昵称：siyn
+- GitHub 用户名：  Tatekii
+- 技术栈：  Typescript
+- Twitter:   [tatekii1](https://x.com/tatekii1)
+- 自我介绍：  web2学历+年龄双歧视不想干外包难民
