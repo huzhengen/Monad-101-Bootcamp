@@ -1,6 +1,6 @@
 ## 第三章：Solidity 开发到部署
 
 1. 在 Monad Testnet 上部署一个 NFT 合约，并提交交易哈希
-   tx: 0x7204fac668e1a92c0c9149e10dc588d60498ddf1c3cc08411a9a6b2dec5e2b00
+   tx: 0x0b44909bd68c96fa9523e112d0d1b4947476743e84b7b6e301771b2b785f5c24
 
-   NFT合约: https://testnet.monadexplorer.com/address/0xf6B8aDEF24fC05aB0a078634254D7A50BDf52BeB
+   NFT合约: https://testnet.monadexplorer.com/address/0xFc8B55f5160a6EEb51a7806F2226D17aC87DF5e6
