@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>像素格子</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 300px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 2px;
+            background-color: #eee;
+            padding: 2px;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .cell {
+            aspect-ratio: 1;
+            background-color: white;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .cell.selected {
+            border: 2px solid #4285f4;
+            box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+            transform: scale(0.95);
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .color-picker {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .buy-button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .buy-button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js" type="application/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>像素格子</h1>
+        <div class="subtitle">基于加密经济创建像素艺术</div>
+        
+        <div class="grid">
+            <!-- 使用JavaScript动态生成100个格子 -->
+        </div>
+
+        <div class="info">
+            <span>钱包地址</span>
+            <span>当前网络</span>
+        </div>
+
+        <div class="controls">
+            <input type="color" class="color-picker" value="#000000">
+            <button class="buy-button" id="connectWallet">购买格子</button>
+        </div>
+    </div>
+
+    <script>
+        let contract = null;
+        let web3 = null;
+        let userAccount = null;
+        let contractABI = [
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "color",
+				"type": "uint256"
+			}
+		],
+		"name": "buySquare",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "color",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "buyer",
+				"type": "address"
+			}
+		],
+		"name": "SquareBought",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "getSquare",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "squares",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
+
+        let selectedCell = null;
+        let selectedColor = '#000000';
+        // let lastSquares = null;
+
+        function selectCells(cell) {
+            // 移除之前选中的样式
+            if (selectedCell) {
+                selectedCell.classList.remove('selected');
+            }
+            // 添加新的选中样式
+            cell.classList.add('selected');
+            selectedCell = cell;
+        }
+
+        // 初始化颜色选择器
+        function initColorPicker() {
+            const colorPicker = document.querySelector('.color-picker');
+            colorPicker.addEventListener('input', function(e) {
+                selectedColor = e.target.value;
+            });
+        }
+
+        async function buySquare() {
+            if (!selectedCell) {
+                alert('请先选择一个格子');
+                return;
+            }
+            if (!userAccount) {
+                alert('请先连接钱包');
+                return;
+            }
+            const color = parseInt(selectedColor.replace('#', ''), 16);
+            const index = parseInt(selectedCell.dataset.index);
+            try {
+                console.log('开始购买格子...');
+                console.log('参数:', {
+                    index: index,
+                    color: color,
+                    from: userAccount,
+                    value: web3.utils.toWei('0.001', 'ether')
+                });
+
+                const price = web3.utils.toWei('0.001', 'ether');
+                const tx = await contract.methods.buySquare(index, color).send({
+                    from: userAccount,
+                    value: price,
+                    gas: 300000
+                });
+                
+                console.log('交易成功:', tx);
+                console.log('可以执行一个远程地址任务')
+                selectedCell.style.backgroundColor = selectedColor;
+                selectedCell.classList.remove('selected');
+                selectedCell = null;
+                getSquare();
+            } catch (error) {
+                console.error('购买失败，详细错误:', error);
+                if (error.message) {
+                    alert('购买失败: ' + error.message);
+                } else {
+                    alert('购买失败，请检查控制台获取详细信息');
+                }
+            }
+        }
+
+        async function getSquare(){
+            const squares = await contract.methods.getSquare().call();
+            console.log('squares',squares);
+
+            for(let i = 0; i < squares.length; i++){
+                const cell = document.querySelector(`.cell:nth-child(${i + 1})`);
+                // 只有当squares[i]不为0时才设置颜色
+                if(squares[i] > 0) {
+                    cell.style.backgroundColor = '#'+parseInt(squares[i]).toString(16).padStart(6, '0');
+                }
+            }
+        }
+
+        // 生成网格
+        const grid = document.querySelector('.grid');
+        for (let i = 0; i < 100; i++) {
+            const cell = document.createElement('div');
+            cell.className = 'cell';
+            cell.dataset.index = i;  // 添加索引数据
+            cell.addEventListener('click', function() {
+                selectCells(this);
+            });
+            grid.appendChild(cell);
+        }
+
+        // 初始化颜色选择器
+        initColorPicker();
+
+        // async function checkForUpdates() {
+        //     try {
+        //         const currentSquares = await contract.methods.getSquare().call();
+                
+        //         // 检查是否有变化
+        //         if (lastSquares && JSON.stringify(currentSquares) !== JSON.stringify(lastSquares)) {
+        //             console.log('检测到格子状态变化');
+        //             getSquare();
+        //         }
+                
+        //         lastSquares = currentSquares;
+        //     } catch (error) {
+        //         console.error('检查更新失败:', error);
+        //     }
+        // }
+
+        async function initConnectWallet() {
+            try {
+                // 检查是否安装了MetaMask
+                if (typeof window.ethereum === 'undefined') {
+                    throw new Error('请安装MetaMask钱包');
+                }
+
+                // 请求用户授权
+                console.log('请求用户授权...');
+                const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+                if (accounts.length === 0) {
+                    throw new Error('用户未授权');
+                }
+                userAccount = accounts[0];
+                console.log('用户已授权，账户:', userAccount);
+
+                // 使用MetaMask提供者
+                web3 = new Web3(window.ethereum);
+                console.log('Web3实例创建成功');
+
+                // 获取当前网络
+                const chainId = await web3.eth.getChainId();
+                console.log('当前网络ID:', chainId);
+
+                // 创建合约实例
+                contract = new web3.eth.Contract(contractABI, '0xa58faE51Ec80c14Fdc7c0Bdf280b8dBFA871E0d9');
+                console.log('合约实例创建成功');
+
+                // 检查合约是否部署
+                const code = await web3.eth.getCode(contract.options.address);
+                if (code === '0x') {
+                    throw new Error('合约地址无效或未部署');
+                }
+                console.log('合约已部署');
+
+                // 获取初始状态
+                await getSquare();
+                // lastSquares = await contract.methods.getSquare().call();
+
+                // 设置定时器，每5秒检查一次更新
+                // setInterval(checkForUpdates, 5000);
+
+                contract.events.SquareBought({
+                    fromBlock: 'latest'
+                }, function(error, event) {
+                    if (error) {
+                        console.error('监听事件错误:', error);
+                        return;
+                    }
+                    console.log('监听到方块购买事件:', event);
+                    // 更新UI
+                    getSquare();
+                });
+
+                const connectButton = document.getElementById('connectWallet');
+                connectButton.innerHTML = '购买格子';
+                connectButton.addEventListener('click', buySquare);
+
+                // 监听账户变化
+                window.ethereum.on('accountsChanged', (accounts) => {
+                    console.log('账户已变更为:', accounts[0]);
+                    userAccount = accounts[0];
+                    if (!userAccount) {
+                        connectButton.innerHTML = '连接钱包';
+                    }
+                });
+
+            } catch (error) {
+                console.error('连接钱包失败:', error);
+                const connectButton = document.getElementById('connectWallet');
+                connectButton.innerHTML = '连接钱包';
+                alert('连接钱包失败: ' + error.message);
+            }
+        }
+
+        initConnectWallet();
+    </script>
+</body>
+</html>
