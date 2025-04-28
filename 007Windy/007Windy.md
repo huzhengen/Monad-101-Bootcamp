@@ -1,0 +1,5 @@
+- 昵称：  カカロット(kakaroto)
+- GitHub 用户名：  007Windy
+- 技术栈：  Vue、React、Nodejs
+- Twitter:   @windclear327470
+- 自我介绍：  前端开发 + AI开发者，目前在研究AI大模型方面的应用，熟悉一些基本的 Agent 开发，有比较不错的AI圈子和资源，对 web3 比较感兴趣，想加入 web3 领域，结合 AI 的能力和资源，做一些东西。
