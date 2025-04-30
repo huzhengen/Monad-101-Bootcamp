@@ -81,7 +81,22 @@
 
 ### 任务
 
-每个课程章节对应一个 **task**，共六章对应 task1-task6, 可以在 [task](./task) 文件夹中复制对应的章节 task1-6 到你的文件夹 `learn/YourName` 中，然后完成回答并提交 PR。 **注意：一个 PR 不要提交多个 task, 也不要修改别人文件夹的内容。**
+每个课程章节对应一个 **task**，共六章对应 task1-task6, 可以在 [task](./task) 文件夹中复制对应的章节 task1-6 到你的文件夹 `learn/YourName` 中，然后完成回答并提交 PR。 **注意：不要修改别人文件夹的内容。**
+
+<br>
+
+| Task                     | 学习奖励（测试网）|
+|--------------------------|-------------------|
+| [task1](./task/task1.md) | 0.5 \$MON         |
+| [task2](./task/task2.md) | 0.5 \$MON         |
+| [task3](./task/task3.md) | 1 \$MON           |
+| [task4](./task/task4.md) | 3 \$MON           |
+| task5                    | 1 \$MON           |
+| task6                    | 4 \$MON           |
+
+完成所有 Task 可获得结课证书 NFT（测试网）， 同时获得以下精美周边一份（4选1随机抽取）。
+
+![merchandise](./public/merchandise.png)
 
 ---
 
