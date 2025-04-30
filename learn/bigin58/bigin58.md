@@ -1,0 +1,5 @@
+- 昵称：bigin  
+- GitHub 用户名：bigin58 
+- 技术栈：js、react、vue  
+- Twitter:   
+- 自我介绍： 前端开发一枚，对web3很感兴趣，自学过Solidity，想转行到web3 

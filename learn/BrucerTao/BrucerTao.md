@@ -1,0 +1,5 @@
+- 昵称：  布鲁斯
+- GitHub 用户名：  BrucerTao
+- 技术栈：  后端Java，Python
+- Twitter:   @bruce95623062
+- 自我介绍：  一个只会后端的web3小白，希望能进圈用自己的技术放光放热，想币圈的大佬们学习

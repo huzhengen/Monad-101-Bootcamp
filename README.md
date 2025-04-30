@@ -34,7 +34,7 @@
 1. `Fork` 本仓库，然后 `clone` 到你的本地。
 2. 进入 [learn](./learn) 文件夹，创建以你的名字(github用户名)命名的文件夹 `YourName`。
 3. 复制 [Template.md](./Template.md) 文件到刚才创建的文件夹，并将文件重命名为你的名字：`YourName.md`。
-4. 打开 `learn/YourName/YourName.md` 文件，根据文档指引填写你的信息并保存。
+4. 打开 `learn/YourName/YourName.md` 文件，根据文档指引填写你的信息并保存。（**钱包地址用来发奖励，请认真填写**）
 5. 提交一个 PR 到本仓库，等待合并。| [如何提交PR？](https://juejin.cn/post/7021727244124962846)
 
 
@@ -61,7 +61,7 @@
 **第三章：Solidity 开发到部署**  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467534) |  [task3](./task/task3.md)
 
 
-**第四章：Web3 前端 101**  |   [task4](./task/task4.md)
+**第四章：Web3 前端 101**  |   [task4](./task/task4.md)  |  [教程](https://gmonad.cc/guide/pixel_grid_guide.html)
 
 1. 基础知识和常用库/工具   |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467453)  
 2. 开发 DApp 前端项目  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467503)  
@@ -81,7 +81,22 @@
 
 ### 任务
 
-每个课程章节对应一个 **task**，共六章对应 task1-task6, 可以在 [task](./task) 文件夹中复制对应的章节 task1-6 到你的文件夹 `learn/YourName` 中，然后完成回答并提交 PR。 **注意：一个 PR 不要提交多个 task, 也不要修改别人文件夹的内容。**
+每个课程章节对应一个 **task**，共六章对应 task1-task6, 可以在 [task](./task) 文件夹中复制对应的章节 task1-6 到你的文件夹 `learn/YourName` 中，然后完成回答并提交 PR。 **注意：不要修改别人文件夹的内容。**
+
+<br>
+
+| Task                     | 学习奖励（测试网）|
+|--------------------------|-------------------|
+| [task1](./task/task1.md) | 0.5 \$MON         |
+| [task2](./task/task2.md) | 0.5 \$MON         |
+| [task3](./task/task3.md) | 1 \$MON           |
+| [task4](./task/task4.md) | 3 \$MON           |
+| task5                    | 1 \$MON           |
+| task6                    | 4 \$MON           |
+
+完成所有 Task 可获得结课证书 NFT（测试网）， 同时获得以下精美周边一份（4选1随机抽取）。
+
+![merchandise](./public/merchandise.png)
 
 ---
 
