@@ -1,0 +1,6 @@
+- 昵称：  Bystander2
+- GitHub 用户名：  Bystander2
+- EVM 钱包地址：  (不明白的可以学完基础知识后再填)  
+- 技术栈：  Typescript/React/NextJS/NodeJS/Python/K8s
+- Twitter:   
+- 自我介绍：  web2全栈开发，正在探索web3
