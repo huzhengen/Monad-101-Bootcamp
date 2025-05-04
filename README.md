@@ -5,7 +5,7 @@
 
 ## Introduction
 
-本次「Monad 101 Bootcamp」由 [Monad](https://www.monad.xyz/) 和 [OpenBuild](https://openbuild.xyz/) 共同发起。通过系统的课程和共同学习机制，帮助更多开发者丝滑进入Web3。与此同时，本训练营以实战为导向，一步步熟悉和掌握 Web3 代码开发。 [了解更多](https://gmonad.cc/event/monad101/bootcamp.html)
+本次「Monad 101 Bootcamp」由 [Monad Foundation](https://www.monad.xyz/) 和 [OpenBuild](https://openbuild.xyz/) 共同发起。通过系统的课程和共同学习机制，帮助更多开发者丝滑进入Web3。与此同时，本训练营以实战为导向，一步步熟悉和掌握 Web3 代码开发。 [了解更多](https://gmonad.cc/event/monad101/bootcamp.html)
 
 ![bootcamp](./public/bootcamp.png)
 
