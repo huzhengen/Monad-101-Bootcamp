@@ -20,3 +20,4 @@
 | Wushengyouhan | 0x23F8a1703ce245349a5Bad63b111Aa06ada7bB30 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd168474ff323b0ba947a02db75953e7be2cd4206e5138095a66532c7e7763c91) |
 | yueliao11     | 0x831E8E37aE66636193D070D37bC601d1F30fE0B9 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x17edb59bbe281175088cde2903f5f8699612411cb533fca2e1e879de5b95ed1f) |
 | zpjayyy       | 0xe1f5e7b5370e5452fd674975fee63e52de283545 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xe6b83cc7e35feb7f9b6017e3f27766189c28361def6e9444792f3a90c9cce3b0) |
+| bigfatkevin   | 0x4F27608A7B82169946eA1d4B1D2069A52BA446aC | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9dcb226d3dfd0d24568a2f43d25a7a0a66a159d96f19b3a4bd6624bad0f7d4d4) |
