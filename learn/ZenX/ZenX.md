@@ -1,0 +1,5 @@
+- 昵称：ZenX  
+- GitHub 用户名：ZenX
+- 技术栈：Java、Spring Boot、Solidity、JavaScript、Hardhat
+- Twitter: @null102423   
+- 自我介绍：目前在金融公司做开发。被Web3的理念愿景吸引，开始学习Web3技术  

@@ -1,0 +1,6 @@
+- 昵称：Jay
+- GitHub 用户名：zpjayyy
+- 技术栈：Java，Spring, Rust, TypeScript, Kotlin, Android
+- Twitter：@jay_lich
+- 自我介绍：web2 后端开发，之前也做过 Android 开发，喜欢区块链技术，被 Monad 的高性能，以及兼容 EVM 吸引，想向 web3 转型
+- EVM 地址: 0xe1f5e7b5370e5452fd674975fee63e52de283545

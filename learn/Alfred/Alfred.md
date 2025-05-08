@@ -1,0 +1,6 @@
+- 昵称：Alfred
+- GitHub 用户名：fuhaooo
+- 技术栈：Solidity, Java
+- Twitter: @Alfredfuuu
+- 自我介绍：Web3 Builder, AI爱好者，渴望早日被AI取代的程序员
+- Wallet：0x53c8984a8773B440b1c79C650fc582aA38Cc5041
