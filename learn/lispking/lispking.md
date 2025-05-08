@@ -9,3 +9,4 @@
   - [Monad Gas 追踪器](https://gas-dog.netlify.app/)：追踪和分析您在 Monad 测试网上的 Gas 消耗情况
 - 正在参与中的项目：
   - [Monad 中文社区](https://gmonad.cc/)
+- 钱包地址：0xc2883daf2a72697732d9bf36cba6a31f07c4d472
