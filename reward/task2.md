@@ -13,7 +13,9 @@
 | jjeejj        | 0x99BB50BC007D6333374FaB2c8D77bD43Fe9Ce2F9 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xaacb572fa01d70f6cc49a7a02322e07672933c7feeb06155fd56ef48fc4cae89) |
 | kilien        | 0x5a9030cF04847cf3bD46A13d8C09AeD007673E0f | [0.5 MON](https://testnet.monadexplorer.com/tx/0x75b7f861c648a6801e3a0d76a994f585bffbdd626cf73fb6c522b55acba94fed) |
 | liyincode     | 0xc2f6163cB05efE65524d3Bb13c2BE734A6916385 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd7876abbb2df740575dd26562aef41be45d9cbcc4d9e5b63b268784d3a30e775) |
+| luAmy         | 0x3FF5607Bb3ec88749ed1Bb27fCCd047aBf60619e | [0.5 MON](https://testnet.monadexplorer.com/tx/0x2dc087ddfff67f932e15b6698915ba6cf719dd9896f98340fa35bbf93bc68e29) |
 | missop        | 0x940dB67293C56cFAd8a1D3eC297A2cC1A4b10e4B | [0.5 MON](https://testnet.monadexplorer.com/tx/0x4cca63160a27a1ca700d266ed6326c83ad1bc5b11e78a0cf0c5273c4b4d0d4a6) |
+| Tatekii       | 0x87739F26DD65f6CCf89F913A2074F64a6aC710E3 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x13fc67e7b2898bc2f3f4072cfe772bde215bd50d471a2f37fc4902227301fcb5) |
 | vimday        | 0x631ab8EB40588543dF900263F864b6376d56A587 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xc4785545a6f2d0056d2f3ab580d3484a3516d72ad36bb836e927fd2d9111360f) |
 | Wushengyouhan | 0x23F8a1703ce245349a5Bad63b111Aa06ada7bB30 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd168474ff323b0ba947a02db75953e7be2cd4206e5138095a66532c7e7763c91) |
 | zpjayyy       | 0xe1f5e7b5370e5452fd674975fee63e52de283545 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xe6b83cc7e35feb7f9b6017e3f27766189c28361def6e9444792f3a90c9cce3b0) |
