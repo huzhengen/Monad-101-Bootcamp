@@ -45,5 +45,4 @@ contract C is A, B {
 ```solidity
 (1) addr.call{value: 1 ether}("")
 (2) addr.transfer(1 ether)
-```
 
