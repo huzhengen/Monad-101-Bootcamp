@@ -8,12 +8,15 @@
 在前端使用 ethers.js 设置事件监听
 处理事件数据并更新 UI
 
+
+
+
 智能合约代码 (Solidity)
 
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+    // SPDX-License-Identifier: MIT
+    pragma solidity ^0.8.0;
 
-contract PixelGrid {
+    contract PixelGrid {
     uint256 constant GRID_SIZE = 100;
     uint256 constant PRICE = 0.01 ether;
 
@@ -44,25 +47,30 @@ contract PixelGrid {
     }
 }
 
+
+
+
+
+
 前端代码 (JavaScript with ethers.js)
 
-import { ethers } from 'ethers';
+    import { ethers } from 'ethers';
 
-// 合约 ABI（仅包含必要的事件部分）
-const contractABI = [
+     // 合约 ABI（仅包含必要的事件部分）
+     const contractABI = [
     "event PixelPurchased(uint256 indexed x, uint256 indexed y, address indexed buyer, string color, uint256 price)",
     "function pixels(uint256 x, uint256 y) view returns (string color, address owner)"
-];
+     ];
 
-// 替换为实际的合约地址
-const contractAddress = "YOUR_CONTRACT_ADDRESS";
+    // 替换为实际的合约地址
+    const contractAddress = "YOUR_CONTRACT_ADDRESS";
 
-// 初始化 provider 和 contract
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-const pixelContract = new ethers.Contract(contractAddress, contractABI, provider);
+    // 初始化 provider 和 contract
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const pixelContract = new ethers.Contract(contractAddress, contractABI, provider);
 
-// 更新 UI 的函数
-function updatePixelOnUI(x, y, color, buyer) {
+    // 更新 UI 的函数
+    function updatePixelOnUI(x, y, color, buyer) {
     // 假设 UI 中有一个 canvas 或 grid 元素来显示像素格子
     const pixelElement = document.getElementById(`pixel-${x}-${y}`);
     if (pixelElement) {
@@ -78,10 +86,10 @@ function updatePixelOnUI(x, y, color, buyer) {
         newPixel.title = `Owner: ${buyer}`;
         gridContainer.appendChild(newPixel);
     }
-}
+    }
 
-// 设置事件监听
-async function setupEventListeners() {
+    // 设置事件监听
+    async function setupEventListeners() {
     try {
         // 确保 provider 已连接
         await provider.getNetwork();
@@ -110,10 +118,10 @@ async function setupEventListeners() {
         // 5 秒后重试
         setTimeout(setupEventListeners, 5000);
     }
-}
+    }
 
-// 初始化
-window.addEventListener('load', async () => {
+    // 初始化
+    window.addEventListener('load', async () => {
     if (window.ethereum) {
         try {
             // 请求用户连接钱包
@@ -125,13 +133,14 @@ window.addEventListener('load', async () => {
     } else {
         console.error('Please install MetaMask!');
     }
-});
+    });
+
 
 HTML 示例（UI 部分）
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Grid</title>
@@ -147,13 +156,15 @@ HTML 示例（UI 部分）
             border: 1px solid #ddd;
         }
     </style>
-</head>
-<body>
+    </head>
+    <body>
     <div id="pixel-grid"></div>
     <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
     <script src="your-script.js"></script>
-</body>
-</html>
+    </body>
+    </html>
+
+
 
 实现说明
 智能合约：
@@ -187,7 +198,6 @@ updatePixelOnUI 函数根据坐标 (x, y) 找到对应的像素格子元素，�
 
 安全性：确保事件监听的稳定性，处理网络断开或 MetaMask 错误的情况。
 
-这个实现可以实时监听像素格子购买事件并更新 UI，适用于动态交互的区块链应用场景。
-
+这个实现可以实时监听像素格子购买事件并更新 UI，适用于动态交互的区块链应用场景
 
 
