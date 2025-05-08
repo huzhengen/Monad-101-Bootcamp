@@ -89,7 +89,7 @@
 |--------------------------|-------------------|-----------------------------|
 | [task1](./task/task1.md) | 0.5 \$MON         | [奖励🎉](./reward/task1.md) |
 | [task2](./task/task2.md) | 0.5 \$MON         | [奖励🎉](./reward/task2.md) |
-| [task3](./task/task3.md) | 1 \$MON           |                             |
+| [task3](./task/task3.md) | 1 \$MON           | [奖励🎉](./reward/task3.md) |
 | [task4](./task/task4.md) | 3 \$MON           |                             |
 | task5                    | 1 \$MON           |                             |
 | task6                    | 4 \$MON           |                             |

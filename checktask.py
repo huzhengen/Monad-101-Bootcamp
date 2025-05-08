@@ -30,9 +30,13 @@ def main():
                 continue
             wallet_address = match.group(0)
 
-        task1_md_path = os.path.join(folder_path, 'task1.md')
-        if os.path.isfile(task1_md_path):
+          # 检查是否完成 taskx（文件或文件夹）
+        task1_path_file = os.path.join(folder_path, 'task1.md')
+        task1_path_dir = os.path.join(folder_path, 'task1')
+
+        if os.path.exists(task1_path_file) or os.path.isdir(task1_path_dir):
             result.append((folder_name, wallet_address, md_file))
+
 
     # 按用户名排序
     result.sort(key=lambda x: x[0].lower())
