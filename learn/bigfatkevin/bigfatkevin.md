@@ -1,6 +1,7 @@
 ## YourName
 
 - 昵称： 生腌寿司 
+- 钱包地址：0x4F27608A7B82169946eA1d4B1D2069A52BA446aC
 - GitHub 用户名：bigfatkevin  
 - 技术栈：  python,html,css,javascript
 - Twitter:   @kevinsbow
