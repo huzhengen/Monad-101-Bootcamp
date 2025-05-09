@@ -17,5 +17,7 @@
 | yueliao11     | 0x831E8E37aE66636193D070D37bC601d1F30fE0B9 | [3 MON](https://testnet.monadexplorer.com/tx/0xf17969d801463413084ea70feedd3e98414b13cd296f56d2d801c11e25f34e77) |
 | zpjayyy       | 0xe1f5e7b5370e5452fd674975fee63e52de283545 | [3 MON](https://testnet.monadexplorer.com/tx/0x92b455ed554b0b0233c4b84f9228d39cdc9059d2798693df66b4eae6af6a5173) |
 | bigfatkevin   | 0x4F27608A7B82169946eA1d4B1D2069A52BA446aC | [3 MON](https://testnet.monadexplorer.com/tx/0x91b827be12e42fc4e0c06211d373040ae0e1db79dc96f2362312194b542f111e) |
+| lispking      | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [3 MON](https://testnet.monadexplorer.com/tx/0x3ce68690ad2fa8eb327b0bf55eaf04fd1eded9fd2db8d061d263a178849e44a2) |
+| q446191796    | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [3 MON](https://testnet.monadexplorer.com/tx/0x5f9d5836423fb428f653519122f5f731503d76884af0c5c2bf5acd35e69e2139) |
 
 
