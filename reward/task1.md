@@ -23,7 +23,8 @@
 | bigfatkevin   | 0x4F27608A7B82169946eA1d4B1D2069A52BA446aC | [0.5 MON](https://testnet.monadexplorer.com/tx/0x7f67c776d5d60e6189fbc23c6aeae169970d2fd37d4009ce335d311444462a64) |
 | lispking      | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x1c3064b775d6997dfc602e830699d7f873f05c3451936c77cfae29a88122ef94) |
 | q446191796    | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xa91d892af6128cc0d69b05744817ee8dbda59fa73500ee17249d0c02c11745d9) |
-
+| Bystander2    | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xf6ba5a5c6a22283eb1a51997f85f669dd1c7b1b89e258c121b3309763789f81d) |
+| luy_0         | 0x42A9e87810a2D715E502C6ff90CBd0e31d40df21 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x8f54ab56319da69c44a99847b0a9826a277fc29baf7b90d5232681240fa4a3f5) |
 
 
 
