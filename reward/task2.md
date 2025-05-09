@@ -23,3 +23,4 @@
 | bigfatkevin   | 0x4F27608A7B82169946eA1d4B1D2069A52BA446aC | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9dcb226d3dfd0d24568a2f43d25a7a0a66a159d96f19b3a4bd6624bad0f7d4d4) |
 | lispking      | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x2146c1525adb582793b6580ce9af9974e689a41763e098de783cb723597d05a7) |
 | q446191796    | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd70fc6ed22ad719028dba34f6f922c381b96b7fdd35bc6b4fdd5cd7380718b3b) |
+| Bystander2    | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xac7f57e36745d88cca9fa5fea5b0f04c831fd2896ec8215133f9153236155bc4) |
