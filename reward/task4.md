@@ -20,4 +20,5 @@
 | lispking      | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [3 MON](https://testnet.monadexplorer.com/tx/0x3ce68690ad2fa8eb327b0bf55eaf04fd1eded9fd2db8d061d263a178849e44a2) |
 | q446191796    | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [3 MON](https://testnet.monadexplorer.com/tx/0x5f9d5836423fb428f653519122f5f731503d76884af0c5c2bf5acd35e69e2139) |
 | yzjc999       | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [3 MON](https://testnet.monadexplorer.com/tx/0x08a35e8c3e86673e9fc43d99e7ef74c432c54e12c074bc447fd38c4baef00468) |
+| huzhengen     | 0x22808912E21FE9923ab421741eDD99C611A2661C | [3 MON](https://testnet.monadexplorer.com/tx/0xba0f344ae687357f51535e22be0c5ebe38457194eeae155b6f441ed7e834cd9b) |
 
