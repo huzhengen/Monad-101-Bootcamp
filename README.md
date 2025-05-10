@@ -67,14 +67,14 @@
 2. 开发 DApp 前端项目  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467503)  
 
 
-**第五章：Monad 101**
+**第五章：Monad 101**  |  [task5](./task/task5.md)
 
-1. Monad 101
+1. Monad 101  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467432)  
 
 
-**第六章：Monad 项目实战**
+**第六章：Monad 项目实战**  |  [task6](./task/task6.md)
 
-1. Monad 项目实战
+1. Monad 项目实战  |  [课程](https://openbuild.xyz/learn/challenges/2060691796/1740467572)  
 
 
 ---
