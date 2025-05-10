@@ -25,3 +25,4 @@
 | q446191796    | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd70fc6ed22ad719028dba34f6f922c381b96b7fdd35bc6b4fdd5cd7380718b3b) |
 | Bystander2    | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xac7f57e36745d88cca9fa5fea5b0f04c831fd2896ec8215133f9153236155bc4) |
 | yzjc999       | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd5631301781f3efbff85b96dacfa70191f0231a815c5e5cce07e979354b3540c) |
+| luy_0         | 0x42A9e87810a2D715E502C6ff90CBd0e31d40df21 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x4874b4a2a66b06ea2f3d348e30fc5f2b6f3d378af1d594be40465d5f08736445) |
