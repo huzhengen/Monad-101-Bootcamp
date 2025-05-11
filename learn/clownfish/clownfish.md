@@ -1,0 +1,6 @@
+- 昵称：  clownfish
+- GitHub 用户名：  clownfish
+- EVM 钱包地址： 0xEa575d397372Fb2eA6435eFDc72eCC29BecfC396 
+- 技术栈：  rust/golang/c++/solidity/zk
+- Twitter:   @zhitong09294679
+- 自我介绍：  7年crypto开发经验，参与过L1、zkrollup项目开发

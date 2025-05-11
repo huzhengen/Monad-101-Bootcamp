@@ -1,0 +1,6 @@
+- 昵称：  Bystander2
+- GitHub 用户名：  Bystander2
+- EVM 钱包地址：  0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055
+- 技术栈：  Typescript/React/NextJS/NodeJS/Python/K8s
+- Twitter:   
+- 自我介绍：  web2全栈开发，正在探索web3
