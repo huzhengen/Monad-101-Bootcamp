@@ -9,3 +9,4 @@
 | puxinyue        | 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [4 MON](https://testnet.monadexplorer.com/tx/0xb3e7b1a1a4a0049870be1ac41d9124a7f39e87774ab7c14f154a7446edf122de) |
 | Wushengyouhan   | 0x23F8a1703ce245349a5Bad63b111Aa06ada7bB30 | [4 MON](https://testnet.monadexplorer.com/tx/0x9c85923bac62f6be12c44a8253c52d5308eacbe9d1fd53ff8f71cbe191eaf6af) |
 | clownfish       | 0xEa575d397372Fb2eA6435eFDc72eCC29BecfC396 | [4 MON](https://testnet.monadexplorer.com/tx/0x1424a98fc826bca59d92227e81b924c59318fd4c4e63a82739f33ea438f05104) |
+| liyincode       | 0xc2f6163cB05efE65524d3Bb13c2BE734A6916385 | [4 MON](https://testnet.monadexplorer.com/tx/0xd898561dadbb9e58827ec8272ea9ee971865f6df29b06854be747d32d0c9c711) |
