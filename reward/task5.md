@@ -9,3 +9,5 @@
 | missop  | 0x940dB67293C56cFAd8a1D3eC297A2cC1A4b10e4B | [1 MON](https://testnet.monadexplorer.com/tx/0x4404b86352e6522ca8db7e9950c6b75b2a59c933ea21ecefc0932942c3313af1) |
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [1 MON](https://testnet.monadexplorer.com/tx/0xe187c89c584f3688c99e3faf2b69ade3770895e3cf1303a39d87018e6b23df83) |
 | puxinyue| 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [1 MON](https://testnet.monadexplorer.com/tx/0x950ca3e5714e98181be5fa97a9b0503903f1c9bdee53fcf36bdf7a57ad6a667e) |
+| Wushengyouhan | 0x23F8a1703ce245349a5Bad63b111Aa06ada7bB30 | [1 MON](https://testnet.monadexplorer.com/tx/0xa022a559be15a29ed76ebc328a15f0e0b1882f726e686ece99dc6bf8806d6c7f) |
+
