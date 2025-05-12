@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<head>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 300px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .grid {
+      grid-template-rows: repeat(10, 20px);
+    }
+
+    .cell {
+      width: 28px;
+      height: 28px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 2px;
+      background-color: #eee;
+      padding: 2px;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .cell {
+      aspect-ratio: 1;
+      background-color: white;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .cell.selected {
+      border: 2px solid #4285f4;
+      box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+      transform: scale(0.95);
+    }
+
+    .color-picker-label {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .connect-wallet {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .connect-wallet:hover {
+      background-color: #3367d6;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js" , type="application/javascript"></script>
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="header">
+      <h1 class="title">像素格子</h1>
+      <p class="subtitle">基于加密经济创建像素艺术</p>
+    </div>
+    <div class="grid" id="pixelGrid"></div>
+    <div style="display:flex; justify-content:space-between; ">
+      <div class="address" style="flex:1;">钱包地址</div>
+      <div class="network" style="flex:1;text-align: right;">当前网络</div>
+    </div>
+    <div class="color-panel">
+      <div class="color-picker-container">
+        <label class="color-picker-label" for="colorPicker">选择颜色
+        </label><input type="color" id="colorPicker" value="#000000">
+      </div>
+      <button class="connect-wallet" id="connectWallet">连接钱包</button>
+    </div>
+  </div>
+  </div>
+  <script>
+    let selectedCell = null;
+    let selectedColor = '#000';
+    let cells = [];
+    let userAccount = null;
+    let web3 = null;
+    let contract = null;
+    let contractABI = [
+      {
+        "inputs": [
+          {
+            "internalType": "uint8",
+            "name": "idx",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "color",
+            "type": "uint256"
+          }
+        ],
+        "name": "buySquare",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "uint8",
+            "name": "idx",
+            "type": "uint8"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "buyer",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "uint256",
+            "name": "color",
+            "type": "uint256"
+          }
+        ],
+        "name": "SquarePurchased",
+        "type": "event"
+      },
+      {
+        "inputs": [],
+        "name": "getSquares",
+        "outputs": [
+          {
+            "internalType": "uint256[]",
+            "name": "",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ];
+
+    function createGrid() {
+      const grid = document.getElementById('pixelGrid');
+      for (let i = 0; i < 100; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'cell';
+        cell.id = i;
+        cell.addEventListener('click', () => selectCell(cell));
+        grid.appendChild(cell);
+        cells.push(cell);
+      }
+    }
+
+    function selectCell(cell) {
+      if (selectedCell) {
+        selectedCell.classList.remove('selected');
+      }
+      cell.classList.add('selected');
+      selectedCell = cell;
+    }
+    function initColorPicker() {
+      const colorPicker = document.getElementById('colorPicker');
+      colorPicker.addEventListener('change', e => {
+        selectedColor = e.target.value;
+      });
+    }
+
+    async function getSquares() {
+      const squares = await contract.methods.getSquares().call();
+      console.log(squares);
+
+      for (let i = 0; i < squares.length; i++) {
+        const cell = cells[i];
+        cell.style.backgroundColor = '#' + parseInt(squares[i]).toString(16);
+      }
+    }
+
+
+
+    async function buySquare() {
+      const cellIndex = selectedCell.id;
+      const color = parseInt(selectedColor.replace('#', ''), 16);
+
+      console.log(cellIndex, color);
+      const price = web3.utils.toWei('0.001', 'ether');
+      const tx = await contract.methods.buySquare(cellIndex, color).send({ from: userAccount, value: web3.utils.toWei("0.01", "ether") });
+      console.log(tx);
+
+      getSquares();
+    }
+
+    async function initWalletConnect() {
+      web3 = new Web3(window.ethereum);
+      contract = new web3.eth.Contract(contractABI, "0xE60E703E4fA59Ba7512963a69De234455955758a");
+
+      contract.events.SquarePurchased()
+        .on('data', (event) => {
+          const { index, buyer, color } = event.returnValues;
+          console.log(`🟩 Square ${index} was bought by ${buyer} with color ${color}`);
+        })
+        .on('error', console.error);
+
+      getSquares();
+
+      const connectButton = document.getElementById('connectWallet');
+
+      if (typeof window.ethereum !== 'undefined') {
+        console.log('MetaMask已安装');
+      } else {
+        console.log('未安装MetaMask');
+      }
+
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      userAccount = accounts[0];
+
+      if (userAccount) {
+        connectButton.innerHTML = '购买格子';
+      } else {
+        connectButton.innerHTML = '连接钱包';
+      }
+
+      connectButton.addEventListener('click', () => {
+        try {
+          buySquare();
+        } catch (e) {
+          console.log(e);
+        }
+      });
+    }
+
+    function init() {
+      createGrid();
+      initColorPicker();
+      initWalletConnect();
+    }
+    init();
+  </script>
+</body>
+<html>
+
+</html>
