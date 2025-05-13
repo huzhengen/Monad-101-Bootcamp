@@ -28,6 +28,8 @@
 | yzjc999       | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xcd2c5f51d94d1e6a213da5cbf00c474722c77b55b8ff3baad3f6b37a0dde708f) |
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xb21d0bf325c18d8ffcb419eb7fdcd35509b6e8a885dc1d63b1198bc7a86ca525) |
 | puxinyue| 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x71417aabbf4d1a3ed26fa8eebc7f91702b4cc40ff1dca136df40ff4725487dc9) |
+| urlyy   | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd7f387a7859a65ad5514c8eded5e5b5c643d3ca4117bf5819b030f25daadb98a) |
+
 
 
 
