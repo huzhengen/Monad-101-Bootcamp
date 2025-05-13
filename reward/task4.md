@@ -24,3 +24,4 @@
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [3 MON](https://testnet.monadexplorer.com/tx/0x79ded2ef56811e634f0fffbfe4676fc9fd9c5fce98046b8af7b89deba513a325) |
 | puxinyue| 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c       | [3 MON](https://testnet.monadexplorer.com/tx/0xc718c24b3b65a5fff45ea6f75cf4f9bdeb71f93d2dd97dac9f84c8f2fe60c0e3) |
 | Bystander2    | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [3 MON](https://testnet.monadexplorer.com/tx/0xfba6a7940112adf360e3932579e5b519259d1fe618aeec24ddc580d73a484ffe) |
+| luAmy         | 0x3FF5607Bb3ec88749ed1Bb27fCCd047aBf60619e | [3 MON](https://testnet.monadexplorer.com/tx/0xa052a7a41793ebfcba7173ded58e8400c31fe50e84ef570adb2a0dc5ab36516a) |
