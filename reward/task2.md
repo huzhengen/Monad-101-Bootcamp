@@ -27,5 +27,5 @@
 | yzjc999       | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd5631301781f3efbff85b96dacfa70191f0231a815c5e5cce07e979354b3540c) |
 | luy_0         | 0x42A9e87810a2D715E502C6ff90CBd0e31d40df21 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x4874b4a2a66b06ea2f3d348e30fc5f2b6f3d378af1d594be40465d5f08736445) |
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x43f2ae02d19edc5ae431faaf55642cf4c3743db2c7fa34daa7257c73396b5dfc) |
-| puxinyue| 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9c72802674f89beeea01f2ff93d37cadc34f81e875e6e9d2ea3dc248b497ad91) |
-| urlyy   | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xbf58c3cfccdd5ac31f2b0ede53235e5c48dc0342f31ed4301ec3ab3eba197249) |
+| puxinyue      | 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9c72802674f89beeea01f2ff93d37cadc34f81e875e6e9d2ea3dc248b497ad91) |
+| urlyy         | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xbf58c3cfccdd5ac31f2b0ede53235e5c48dc0342f31ed4301ec3ab3eba197249) |

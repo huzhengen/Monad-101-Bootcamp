@@ -12,3 +12,4 @@
 | Wushengyouhan   | 0x23F8a1703ce245349a5Bad63b111Aa06ada7bB30 | [1 MON](https://testnet.monadexplorer.com/tx/0xa022a559be15a29ed76ebc328a15f0e0b1882f726e686ece99dc6bf8806d6c7f) |
 | liyincode       | 0xc2f6163cB05efE65524d3Bb13c2BE734A6916385 | [1 MON](https://testnet.monadexplorer.com/tx/0x5f251abc9b96c6c934660d8300bd84a546686ca605c71c21ac4bbae7d6e6f4bd) |
 | clownfish       | 0xEa575d397372Fb2eA6435eFDc72eCC29BecfC396 | [1 MON](https://testnet.monadexplorer.com/tx/0x7991db98019f9e0208273edae1b3bdc12e3558ad8c2e5bd2862e33508a1fc35c) |
+| lispking        | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [1 MON](https://testnet.monadexplorer.com/tx/0x8a1643ed81c5d80d8ecc58939368f7c7c1096e683344a27801f5251bed6c817e) |
