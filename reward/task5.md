@@ -13,3 +13,4 @@
 | liyincode       | 0xc2f6163cB05efE65524d3Bb13c2BE734A6916385 | [1 MON](https://testnet.monadexplorer.com/tx/0x5f251abc9b96c6c934660d8300bd84a546686ca605c71c21ac4bbae7d6e6f4bd) |
 | clownfish       | 0xEa575d397372Fb2eA6435eFDc72eCC29BecfC396 | [1 MON](https://testnet.monadexplorer.com/tx/0x7991db98019f9e0208273edae1b3bdc12e3558ad8c2e5bd2862e33508a1fc35c) |
 | lispking        | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [1 MON](https://testnet.monadexplorer.com/tx/0x8a1643ed81c5d80d8ecc58939368f7c7c1096e683344a27801f5251bed6c817e) |
+| Bystander2      | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [1 MON](https://testnet.monadexplorer.com/tx/0xe2e7c24b174b6fc0a2d3f6cdba01106e4947f18c7a4470216e711dd1eb63e437) |
