@@ -16,3 +16,4 @@
 | Bystander2      | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [1 MON](https://testnet.monadexplorer.com/tx/0xe2e7c24b174b6fc0a2d3f6cdba01106e4947f18c7a4470216e711dd1eb63e437) |
 | q446191796      | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [1 MON](https://testnet.monadexplorer.com/tx/0x73dadf69e484ca96180a3e49f27634df0b2311702109a43e67be91d48164a4e4) |
 | yzjc999         | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [1 MON](https://testnet.monadexplorer.com/tx/0xad98aff3a58565e61f4543bed2adbdaf24ace7ac063dbc3f4d4c7031136b679c) |
+| karl            | 0xd1b0a9e9e6e7664ef4db0fa84df4280c69333333 | [1 MON](https://testnet.monadexplorer.com/tx/0x5d68b5af1bca7ff9a85fce0fca47a79260e20627637e6ccb2255aef74c1250a8) |

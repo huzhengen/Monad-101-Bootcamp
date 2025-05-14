@@ -25,3 +25,4 @@
 | puxinyue| 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c       | [3 MON](https://testnet.monadexplorer.com/tx/0xc718c24b3b65a5fff45ea6f75cf4f9bdeb71f93d2dd97dac9f84c8f2fe60c0e3) |
 | Bystander2    | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [3 MON](https://testnet.monadexplorer.com/tx/0xfba6a7940112adf360e3932579e5b519259d1fe618aeec24ddc580d73a484ffe) |
 | luAmy         | 0x3FF5607Bb3ec88749ed1Bb27fCCd047aBf60619e | [3 MON](https://testnet.monadexplorer.com/tx/0xa052a7a41793ebfcba7173ded58e8400c31fe50e84ef570adb2a0dc5ab36516a) |
+| karl          | 0xd1b0a9e9e6e7664ef4db0fa84df4280c69333333 | [3 MON](https://testnet.monadexplorer.com/tx/0x27c425eb51bf2f1d6351761b4973afc2adee21c82e3863b921d0b15d308c58a9) |

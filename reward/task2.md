@@ -30,3 +30,4 @@
 | puxinyue      | 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9c72802674f89beeea01f2ff93d37cadc34f81e875e6e9d2ea3dc248b497ad91) |
 | urlyy         | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xbf58c3cfccdd5ac31f2b0ede53235e5c48dc0342f31ed4301ec3ab3eba197249) |
 | Risker-C      | 0x0Fd110F1237711857474D9f6963E75206798fB91 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x2de28c802be4f30f1a2dae5c82a55c90bbd28c4c68b4104cdf37522a18b79a8e) |
+| karl          | 0xd1b0a9e9e6e7664ef4db0fa84df4280c69333333 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x2336d29e9b89a5e70a6542a194fd56df00fb422f30128c35a3cc0019d7bc8222) |
