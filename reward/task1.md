@@ -29,7 +29,7 @@
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xb21d0bf325c18d8ffcb419eb7fdcd35509b6e8a885dc1d63b1198bc7a86ca525) |
 | puxinyue      | 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x71417aabbf4d1a3ed26fa8eebc7f91702b4cc40ff1dca136df40ff4725487dc9) |
 | urlyy         | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xd7f387a7859a65ad5514c8eded5e5b5c643d3ca4117bf5819b030f25daadb98a) |
-
-
+| Risker-C      | 0x0Fd110F1237711857474D9f6963E75206798fB91 | [0.5 MON](https://testnet.monadexplorer.com/tx/0xbf39e9ba4325f6e1adba3535c46af299c642599dc32e528f2f4926bd66ba9f20) |
+| karl          | 0xd1b0a9e9e6e7664ef4db0fa84df4280c69333333 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x65f51bb6c8ee7c29368a0b3c5d29f6e3eb107dcfeea4657d70169248946b2a21) |
 
 
