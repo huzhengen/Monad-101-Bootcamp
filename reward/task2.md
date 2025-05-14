@@ -29,3 +29,4 @@
 | qiaopengjun5162| 0xE91e2DF7cE50BCA5310b7238F6B1Dfcd15566bE5 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x43f2ae02d19edc5ae431faaf55642cf4c3743db2c7fa34daa7257c73396b5dfc) |
 | puxinyue      | 0xfD2347cB40e73Fcafb17ade5a8ed6af895eD1c5c | [0.5 MON](https://testnet.monadexplorer.com/tx/0x9c72802674f89beeea01f2ff93d37cadc34f81e875e6e9d2ea3dc248b497ad91) |
 | urlyy         | 0xDdC3DAF15325c1d042646CcB7a25baD1FFB7f1bd | [0.5 MON](https://testnet.monadexplorer.com/tx/0xbf58c3cfccdd5ac31f2b0ede53235e5c48dc0342f31ed4301ec3ab3eba197249) |
+| Risker-C      | 0x0Fd110F1237711857474D9f6963E75206798fB91 | [0.5 MON](https://testnet.monadexplorer.com/tx/0x2de28c802be4f30f1a2dae5c82a55c90bbd28c4c68b4104cdf37522a18b79a8e) |

@@ -14,3 +14,5 @@
 | clownfish       | 0xEa575d397372Fb2eA6435eFDc72eCC29BecfC396 | [1 MON](https://testnet.monadexplorer.com/tx/0x7991db98019f9e0208273edae1b3bdc12e3558ad8c2e5bd2862e33508a1fc35c) |
 | lispking        | 0xc2883daf2a72697732d9bf36cba6a31f07c4d472 | [1 MON](https://testnet.monadexplorer.com/tx/0x8a1643ed81c5d80d8ecc58939368f7c7c1096e683344a27801f5251bed6c817e) |
 | Bystander2      | 0xa5d1f687B741af9b2B7c2B0D77757C6a0De69055 | [1 MON](https://testnet.monadexplorer.com/tx/0xe2e7c24b174b6fc0a2d3f6cdba01106e4947f18c7a4470216e711dd1eb63e437) |
+| q446191796      | 0xe83d0942b873e019a17c2a908b100d1051387ca3 | [1 MON](https://testnet.monadexplorer.com/tx/0x73dadf69e484ca96180a3e49f27634df0b2311702109a43e67be91d48164a4e4) |
+| yzjc999         | 0x17b64ba679e095ac87a400b6f6ac8cd591b517f9 | [1 MON](https://testnet.monadexplorer.com/tx/0xad98aff3a58565e61f4543bed2adbdaf24ace7ac063dbc3f4d4c7031136b679c) |
